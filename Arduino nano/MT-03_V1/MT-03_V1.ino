@@ -2,11 +2,11 @@
 #include <Servo.h>
 
 Servo servo;
-const int buttonPin = 9;
+const int buttonPin = 7;
 int buttonState = 0;
 
 void setup() {
-  servo.attach(12);
+  servo.attach(10);
   pinMode(buttonPin, INPUT);
   pinMode(LED_BUILTIN, OUTPUT);
 }
@@ -19,6 +19,6 @@ void loop() {
 
   } else {
     digitalWrite(LED_BUILTIN, HIGH);
-    servo.write(125);
+    servo.write(135);
   }
 }
